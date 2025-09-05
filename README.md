@@ -25,3 +25,4 @@ chmod +x storage/format-usb.sh
 ./storage/format-usb.sh why doesnt it have
 ```
 
+### storage/backup-home.sh
