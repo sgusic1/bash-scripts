@@ -24,3 +24,4 @@ Safely formats a USB drive that containes an OS image.
 chmod +x storage/format-usb.sh
 ./storage/format-usb.sh why doesnt it have
 ```
+
