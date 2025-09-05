@@ -26,3 +26,19 @@ chmod +x storage/format-usb.sh
 ```
 
 ### storage/backup-home.sh
+Creates a compressed backup (.tar.gz) of a user’s home directory with support for excluding specific folders.
+
+**Features:**
+- Prompts for the username and the backup destination directory.
+- Verifies that the destination directory exists before proceeding.
+- Excludes folders if specified (e.g. Downloads .cache .mozilla).
+- Creates a timestamped archive (backup-DD-MM-YYYY-HH-MM.tar.gz) to avoid overwriting old backups.
+- Uses tar with gzip compression for efficient storage.
+
+**Note**: This script does not check available disk space. Make sure the destination drive has enough free space before running it.
+
+**Usage:**
+```bash
+chmod +x storage/backup-home.sh
+./storage/backup-home.sh
+```
